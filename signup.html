@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">STUDENT SIGN-UP</div>
+      <div class="content">
+        <form action="connect.php" method="POST">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details" >Username:</span>
+              <input type="text" placeholder="Enter your username:" name="username" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Full Name:</span>
+              <input type="text" placeholder="Enter your name:" name="fullname" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number:</span>
+              <input
+                type="tel"
+                pattern="[0-9]{4}-[0-9]{6}"
+                placeholder="1234-567890"
+                name="phonenumber"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Email:</span>
+              <input
+                type="email"
+                placeholder="Enter your email address:"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Password:</span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password:</span>
+              <input
+                type="cnfrmpassword"
+                placeholder="Confirm your password"
+                name="cnpassword"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" name="submit" href="" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
